@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestSuite" verbose="1" >
+ <parameter name="sTestID" value="TC_00_01"/>
+  <test name="Regression1">
+    <classes>
+      <class name="testCases.TC_01_VerifyUserLogin"/>
+    </classes>
+  </test>
+</suite>
