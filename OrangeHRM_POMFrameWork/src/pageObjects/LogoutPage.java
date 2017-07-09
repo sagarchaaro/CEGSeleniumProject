@@ -1,6 +1,9 @@
 package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import utility.Log;
+
 import org.openqa.selenium.By;
 
 
@@ -16,9 +19,9 @@ public class LogoutPage extends BaseClass{
 		element=null;
 		try{
 			element=driver.findElement(By.id("welcome"));
-			System.out.println("Welcome text link is found on Home page"); 
+			Log.info("Welcome text link is found on Home page"); 
 		}catch(Exception e){
-			System.err.println("Welcome text not found on Home page");
+			Log.info("Welcome text not found on Home page");
 			throw(e);
 		}
 		return element;
@@ -28,9 +31,9 @@ public class LogoutPage extends BaseClass{
 	   element=null;
 	   try{
 		   	element=driver.findElement(By.linkText("Logout"));
-		   	System.out.println("logout button is found on Home page");
+		   	Log.info("logout button is found on Home page");
 		}catch(Exception e){
-			System.err.println("Logout button is not found on Home page");
+			Log.info("Logout button is not found on Home page");
 			throw(e);
 		}
 	   return element;
