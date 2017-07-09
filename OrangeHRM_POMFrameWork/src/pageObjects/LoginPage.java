@@ -2,6 +2,9 @@ package pageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
+import utility.Log;
+
 import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends BaseClass
@@ -18,10 +21,10 @@ public class LoginPage extends BaseClass
     	element=null;
     	try{
     			element=driver.findElement(By.id("txtUsername"));
-    			System.out.println("UserName text-box is found on Login page");
+    			Log.info("UserName text-box is found on Login page");
     		  
     	  	}catch(Exception e){
-    	  		System.err.println("UserName text-box is not found on Login page");
+    	  		Log.info("UserName text-box is not found on Login page");
     	  		throw(e);
     	  	}
     	  return element;
@@ -31,10 +34,10 @@ public class LoginPage extends BaseClass
     	element=null;
     	try{
     			element=driver.findElement(By.id("txtPassword"));
-    			System.out.println("Password text-box is found on Login page");
+    			Log.info("Password text-box is found on Login page");
     		  
     	  	}catch(Exception e){
-    	  		System.err.println("Password text-box is not found on Login page");
+    	  		Log.info("Password text-box is not found on Login page");
     	  		throw(e);
     	  	}
     	return element;
@@ -45,10 +48,10 @@ public class LoginPage extends BaseClass
     	element=null;
     	try{
     			element=driver.findElement(By.name("Submit"));
-    			System.out.println("Submit Button is found on Login page");
+    			Log.info("Submit Button is found on Login page");
     	   
            	}catch(Exception e){
-           		System.err.println("Submit Button is not found on Login page");
+           		Log.info("Submit Button is not found on Login page");
            		throw(e);
     	   }
     	return element;
