@@ -34,7 +34,6 @@ public class TC_00_LoginLogout
 	@Parameters({"sTestID"})
 	@BeforeClass
 	public static void before(@Optional(Constant.sTest_ID) String sTestID) throws Exception{
-		System.out.println(sTestID);
 		sTestName=Thread.currentThread().getStackTrace()[1].getClassName().substring(Thread.currentThread().getStackTrace()[1].getClassName().indexOf('.')+1)+"_"+sTestID;
 		report=new ExtentReports(Constant.extentReportsPath+sTestName+".html", true);
 		logger=report.startTest(sTestName);

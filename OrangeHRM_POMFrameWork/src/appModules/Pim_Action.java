@@ -2,6 +2,9 @@
 
 import org.openqa.selenium.WebDriver;
 import pageObjects.Pim_Page;
+import utility.Constant;
+import utility.ExcelConfig;
+import utility.Log;
 import pageObjects.BaseClass;
 
 public class Pim_Action extends BaseClass
@@ -11,24 +14,30 @@ public class Pim_Action extends BaseClass
 		super(driver); 
 	}
 
-    public static  void pimAction_Execute(String fname,String lastName,String eId) throws Exception
+    public static  void pimAction_Execute(int iTestCaseRow, String sSheetName) throws Exception
     {
-    	System.out.println("Add Employee Details");
+    	
         Pim_Page.lnk_PimMenu().click();
-        System.out.println("Pim Menu is clicked");
-        Thread.sleep(3000);
-        System.out.println("AddEmloyee Details");
+        Log.info("Click action is performed on PIM Link");
+        Thread.sleep(Constant.iThreadWait);
         Pim_Page.lnk_AddEmployee().click();
-        System.out.println("Add employee is clicked");
-        Pim_Page.txtbx_FirstName().sendKeys(fname);
-        System.out.println("First name is entered");
-        Pim_Page.txtbx_LastName().sendKeys(lastName);
-        System.out.println("Last name is entered");
-        Pim_Page.txtbx_Empid().clear();
+        Log.info("Click action is performed on Add Employee sub-Link");
+        String sFirstName=ExcelConfig.getCellData(iTestCaseRow, Constant.col_FirstName, sSheetName);
+        Pim_Page.txtbx_FirstName().sendKeys(sFirstName);
+        Log.info(sFirstName +" is entered in FirstName text-box");
+        String sLastName=ExcelConfig.getCellData(iTestCaseRow, Constant.col_LastName, sSheetName);
+        Pim_Page.txtbx_LastName().sendKeys(sLastName);
+        Log.info(sFirstName +" is entered in LastName text-box");
+        /*Pim_Page.txtbx_Empid().clear();
         Pim_Page.txtbx_Empid().sendKeys(eId);
-        System.out.println("Employee id is Entered");
+        System.out.println("Employee id is Entered");*/
+        Pim_Page.btn_ChooseFile().click();
+        Log.info("Click action is performed on ChooseFile button");
+        Runtime.getRuntime().exec(Constant.windowFilesPath+Constant.AutoItFile);
+        Log.info("File Upload action is performed");
+        Thread.sleep(5000);
         Pim_Page.btn_save().click();
-        System.out.println("Save button is clicked");
+        Log.info("Click Action is performed on Save button");
     }
     public static void pim_deleteAction() throws Exception
     {

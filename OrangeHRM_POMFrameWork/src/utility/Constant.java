@@ -11,15 +11,19 @@ public class Constant
 	public static String ieDriverPath="";
 	public static String chromeDriverPath="D:\\Java and Selenium\\Selenium\\Jars and Drivers\\Drivers\\chromedriver\\chromedriver.exe";
 	public static String chromeincognitoDriverPath="";
+	public static String safariDriverPath="";
 	
 	static String filePath=System.getProperty("user.dir");
 	public static String screenshotsPath=filePath+"\\Screenshots\\";
 	public static String extentReportsPath=filePath+"\\ExtentReports\\";
+	public static String windowFilesPath=filePath+"\\WindowsFiles\\";
+	public static String AutoItFile="FileUpload.exe";
 	public static String path_TestData=filePath+"\\TestData\\";
 	public static String file_TestData="OrangeHRMTestData.xlsx";
 	public static String sheet_TestCases="TestCases";
 	public static String sheet_TestData_Login="Login";
-	public static final String sTest_ID="TC_00_05";
+	public static String sheet_TestData_AddEmployee="Add Employee";
+	public static final String sTest_ID="TC_03_01";
 	public static String objectMap="";
 	
 	
@@ -32,13 +36,7 @@ public class Constant
 	public static int iThreadWait=3000;
 	public static int iThreadWaitLong=5000;
 	
-	public static int iRetryCount=0;
-	
-	
-	//AddEmployee
-	public static String sFName="CareerExplorer";
-	public static String sLastName="Group";
-	public static String sEmpId="E002";
+	public static int iRetryCount=5;
 	
 	//TestCase Sheet
 	public static int col_TestCaseName=1;
@@ -52,6 +50,12 @@ public class Constant
 	//Login TestData Sheet
 	public static int col_UserName=3;
 	public static int col_Password=4;
+	
+	//AddEmployee TestData Sheet
+	public static int col_FirstName=5;
+	public static int col_MiddleName=6;
+	public static int col_LastName=7;
+	
 			
 
 }
