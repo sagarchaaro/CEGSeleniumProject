@@ -28,7 +28,7 @@ public class Constant
 	
 	
 	//TimeOuts and Waits
-	public static int iImplicitWaitShort=5;
+	public static int iImplicitWaitShort=10;
 	public static int iImplicitWait=20;
 	public static int iImplicitWaitlong=40;
 	public static long fluentWaitVerify=18000;
