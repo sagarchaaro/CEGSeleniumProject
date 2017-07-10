@@ -16,9 +16,9 @@ public class Pim_Page extends BaseClass
 		element=null;
 		try{
 			element=driver.findElement(By.xpath("//*[@id='menu_pim_viewPimModule']/b"));
-			System.out.println("PIM menu is found on Home page");
+			Log.info("PIM menu is found on Home page");
 		}catch(Exception e){
-			System.err.println("PIM menu is not found on Home page");
+			Log.info("PIM menu is not found on Home page");
 			throw(e);
 		}
 		return element;	  
