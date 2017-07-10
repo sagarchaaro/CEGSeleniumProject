@@ -65,7 +65,7 @@ public class Pim_Page extends BaseClass
 			element=driver.findElement(By.xpath("//*[@id='employeeId']"));
 			Log.info("Employee Id is found on Add Employee page");
 		}catch(Exception e){
-			System.err.println("Employee Id is not found on Add Employee page");
+			Log.info("Employee Id is not found on Add Employee page");
 			throw(e);
 		}
 	  return element;
