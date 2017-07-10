@@ -41,7 +41,7 @@ public class Pim_Page extends BaseClass
 		element=null;
 		try{
 			element=driver.findElement(By.xpath("//*[@id='firstName']"));
-			System.out.println("First Name text-box is found on Add Employee page");
+			Log.info("First Name text-box is found on Add Employee page");
 		}catch(Exception e){
 			System.err.println("First Name text-box is not found on Add Employee page");
 			throw(e);
