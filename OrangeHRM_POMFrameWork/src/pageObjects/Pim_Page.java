@@ -28,9 +28,9 @@ public class Pim_Page extends BaseClass
 		element=null;
 		try{ 
 			element=driver.findElement(By.xpath("//*[@id='menu_pim_addEmployee']"));
-			System.out.println("Add Employee sublink is found on Home page");
+			Log.info("Add Employee sublink is found on Home page");
 		}catch(Exception e){
-			System.err.println("Add Employee sublink is found on Home page");
+			Log.info("Add Employee sublink is found on Home page");
 			throw(e);
 		}
 		return element;
