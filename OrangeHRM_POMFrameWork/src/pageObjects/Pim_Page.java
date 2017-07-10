@@ -63,7 +63,7 @@ public class Pim_Page extends BaseClass
 		element=null;
 		try{
 			element=driver.findElement(By.xpath("//*[@id='employeeId']"));
-			System.out.println("Employee Id is found on Add Employee page");
+			Log.info("Employee Id is found on Add Employee page");
 		}catch(Exception e){
 			System.err.println("Employee Id is not found on Add Employee page");
 			throw(e);
@@ -75,7 +75,7 @@ public class Pim_Page extends BaseClass
 		try
 		{
 			element=driver.findElement(By.xpath("//*[@id='btnSave']"));
-			System.out.println("Save button is found on Add Employee page");
+			Log.info("Save button is found on Add Employee page");
 		}catch(Exception e){
 			System.err.println("Save button is not found on Add Employee page");
 			throw(e);
@@ -87,7 +87,7 @@ public class Pim_Page extends BaseClass
     	element=null;
   	  	try{
   	  		element=driver.findElement(By.xpath("//*[@id='menu_pim_viewEmployeeList']"));
-  	  		System.err.println("Employee List link is found on Home page");
+  	  		Log.info("Employee List link is found on Home page");
   	  	}catch(Exception e){
   	  		System.err.println(" Employee List link is not found on Home page");
   	  		throw(e);
