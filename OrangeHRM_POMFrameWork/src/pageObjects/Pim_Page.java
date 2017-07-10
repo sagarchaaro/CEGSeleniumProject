@@ -28,9 +28,9 @@ public class Pim_Page extends BaseClass
 		element=null;
 		try{ 
 			element=driver.findElement(By.xpath("//*[@id='menu_pim_addEmployee']"));
-			System.out.println("Add Employee sublink is found on Home page");
+			Log.info("Add Employee sublink is found on Home page");
 		}catch(Exception e){
-			System.err.println("Add Employee sublink is found on Home page");
+			Log.info("Add Employee sublink is found on Home page");
 			throw(e);
 		}
 		return element;
@@ -41,7 +41,7 @@ public class Pim_Page extends BaseClass
 		element=null;
 		try{
 			element=driver.findElement(By.xpath("//*[@id='firstName']"));
-			System.out.println("First Name text-box is found on Add Employee page");
+			Log.info("First Name text-box is found on Add Employee page");
 		}catch(Exception e){
 			System.err.println("First Name text-box is not found on Add Employee page");
 			throw(e);
