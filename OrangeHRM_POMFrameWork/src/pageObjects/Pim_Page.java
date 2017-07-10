@@ -52,9 +52,9 @@ public class Pim_Page extends BaseClass
 		element=null;
 		try{
 			element=driver.findElement(By.xpath("//*[@id='lastName']"));
-			System.out.println("Last Name text-box is found on Add Employee page");
+			Log.info("Last Name text-box is found on Add Employee page");
 		}catch(Exception e){
-			System.err.println("Last Name text-box is found on Add Employee page");
+			Log.info("Last Name text-box is found on Add Employee page");
 			throw(e);
 		}
 		return element;

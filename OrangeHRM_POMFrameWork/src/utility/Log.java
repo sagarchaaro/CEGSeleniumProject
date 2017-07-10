@@ -10,7 +10,7 @@ public class Log {
 	
 	public static void startTestCase(String sTestCaseName){
 		log.info("*****************************************************************");
-		log.info("**********+sTestCaseName+************");
+		log.info("**********"+sTestCaseName+ "************");
 		log.info("******************************************************************");
 	}
 	
