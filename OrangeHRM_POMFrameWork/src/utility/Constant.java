@@ -31,7 +31,7 @@ public class Constant
 	public static int iImplicitWaitShort=10;
 	public static int iImplicitWait=30;
 	public static int iImplicitWaitlong=40;
-	public static long fluentWaitVerify=18000;
+	public static long fluentWaitVerify=20000;
 	public static int iThreadWaitShort=1000;
 	public static int iThreadWait=3000;
 	public static int iThreadWaitLong=5000;
