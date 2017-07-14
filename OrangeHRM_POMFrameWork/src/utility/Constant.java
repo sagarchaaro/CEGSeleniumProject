@@ -17,7 +17,10 @@ public class Constant
 	public static String screenshotsPath=filePath+"\\Screenshots\\";
 	public static String extentReportsPath=filePath+"\\ExtentReports\\";
 	public static String windowFilesPath=filePath+"\\WindowsFiles\\";
+	public static String tngsuitereportPath=filePath+"\\test-output\\";
+	public static String testresourcesPath=filePath+"\\src\\test\\resources\\";
 	public static String AutoItFile="FileUpload.exe";
+	
 	public static String path_TestData=filePath+"\\TestData\\";
 	public static String file_TestData="OrangeHRMTestData.xlsx";
 	public static String sheet_TestCases="TestCases";
@@ -39,6 +42,7 @@ public class Constant
 	public static int iRetryCount=5;
 	
 	//TestCase Sheet
+	public static int col_TestCaseNumber=0;
 	public static int col_TestCaseName=1;
 	public static int col_TestID=2;
 	public static int col_Browser=4;

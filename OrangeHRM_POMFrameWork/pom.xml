@@ -114,6 +114,12 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 	    <artifactId>log4j</artifactId>
 	    <version>1.2.17</version>
 	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.apache.maven.shared/maven-shared-utils -->
+	<dependency>
+	    <groupId>org.apache.maven.shared</groupId>
+	    <artifactId>maven-shared-utils</artifactId>
+	    <version>0.2</version>
+	</dependency>
 	
 	
 	
