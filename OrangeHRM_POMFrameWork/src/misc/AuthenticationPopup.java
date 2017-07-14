@@ -9,7 +9,7 @@ import utility.Log;
 
 public class AuthenticationPopup {
 	
-	public static void execute() throws Exception{
+	public static void authenticatePopup_Execute() throws Exception{
 		Thread.sleep(5000);
 		Robot rb=new Robot();
 		StringSelection sUserName=new StringSelection("userName");
